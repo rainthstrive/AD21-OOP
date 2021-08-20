@@ -1,52 +1,51 @@
+import java.util.Scanner;
+
 /*
  * Pokemon Battle Simulator
- * v1.0
+ * v1.2
  * author: Clase POO 031
  */
 
-import java.awt.event.KeyEvent;
-import java.util.Scanner;
-
 public class Main {
 	
-	static Pokemon enemigo = new Pokemon("Charizard", 10);
-	static Pokemon aliado = new Pokemon("Magikarp", 10);
+	static Flipamon enemigo = new Flipamon("Charizard", 10);
+	static Flipamon aliado = new Flipamon("Magikarp", 20);
 
 	public static void main(String[] args) {
 		// Nuestro método de hacer inputs
 		Scanner scanner = new Scanner(System.in);
+		// Booleano para definir si la batalla sigue en curso
 		boolean batalla = true;
-		
-		// TODO: Menu
+		// Menu de batalla
 		do {
 			System.out.println("Qué acción deseas realizar");
 			System.out.println("Atacar: 1. Huir: 2");
 			int action = scanner.nextInt();
+			
 			switch(action) {
-				// TODO: Atacar
 				case 1: 
 					atacar();
 					break;
-				// TODO: Huir
 				case 2: 
 					batalla = false;
 					break;
-				default: System.out.println("Acción no definida");
+				default:
+					System.out.println("Acción no definida");
 					break;
 			}
 			
 			if(aliado.getVida() <=0 || enemigo.getVida()<=0) {
 				if(aliado.getVida()>0) {
-					System.out.println("VAMOS MESSI");
+					System.out.println("Exceso de odio " + aliado.getNombre());
 				} else {
-					System.out.println("VAMOO MESSI NO SE RINDA");
+					System.out.println("Te falta odio " + aliado.getNombre());
 				}
 				batalla = false;
 			}
 			
 			seguir();
 		} while(batalla);
-		System.out.println("Gracias por jugar Criaturas Flipantes!");
+		System.out.println("Gracias por jugar Flipamon!");
 		// TODO: Evaluar si perdemos o ganamos
 	}
 	
@@ -71,6 +70,8 @@ public class Main {
 		System.out.println("Atacaste con: " + puntos + " puntos.");
 		enemigo.calcularVida(puntos);
 		System.out.println("Vida de enemigo: " + enemigo.getVida() + " puntos.");
+		
+		if(enemigo.getVida()>0)
 		ataqueEnemigo();
 	}
 	
