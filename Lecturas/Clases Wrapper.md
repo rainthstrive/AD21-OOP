@@ -73,7 +73,7 @@ ___
 
 Otro método útil es el **`toString()`**, el cual es usado para convertir objetos *wrapper* hacia cadenas de texto.
 
-En el siguiente ejemplo, convertimos un `**Integer**` hacia un **`String`**, y usamos el método **`length()`** de la clase **`String`** para imprimir el tamaño de "string":
+En el siguiente ejemplo, convertimos un **`Integer`** hacia un **`String`**, y usamos el método **`length()`** de la clase **`String`** para imprimir el tamaño de "string":
 
 ### Ejemplo
 
