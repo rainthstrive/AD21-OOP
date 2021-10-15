@@ -64,7 +64,7 @@ Estos funcionan de la siguiente manera:
 ## Entendiendo HTTP
 
 HTTP es el protocolo que permite enviar documentos de un lado a otro en la web. Solo tiene dos funciones diferentes: servidor, y cliente.
-Cada mensaje HTTP se compone de una cabecera, y un cuerpo. En REST, los datos de cabecera suelen ser más importantes que el cuerpo.
+Cada mensaje HTTP se compone de una cabecera, y un cuerpo.
 
 ### URL
 Las URL son para identificar las cosas en las que deseas operar. Decimos que cada URL identifica un recurso. Estas son exactamente las mismas URL que se asignan a las páginas web.
@@ -72,7 +72,7 @@ Las URL son para identificar las cosas en las que deseas operar. Decimos que cad
 ![enter image description here](https://developer.mozilla.org/en-US/docs/Learn/Common_questions/What_is_a_URL/mdn-url-all.png)
 
 ### Verbos HTTP
-Cada solicitud especifica un cierto verbo o método HTTP, en el encabezado de la solicitud, e indican al servidor qué hacer con los datos identificados por la URL.​ En REST, los verbos siempre van en el encabezado, jamás en la URL.
+Cada solicitud especifica un cierto verbo o método HTTP, en el encabezado de la solicitud, e indican al servidor qué hacer con los datos identificados por la URL.​
 Los verbos más usados e importantes son:​
 | Verbo | Descripción |
 |--|--|
