@@ -1,0 +1,32 @@
+<!DOCTYPE html>  
+<html>  
+
+<head>  
+<meta charset="ISO-8859-1">  
+<title>Sistema de Empleados</title>  
+</head> 
+
+<body>  
+<h1>Agregar nuevo Empleado</h1>  
+<form action="SaveServlet" method="post">  
+<table>  
+<tr><td>Nombre:</td><td><input type="text" name="name"/></td></tr>  
+<tr><td>Contrasena:</td><td><input type="password" name="password"/></td></tr>  
+<tr><td>Correo:</td><td><input type="email" name="email"/></td></tr>  
+<tr><td>Pais:</td><td>  
+<select name="country" style="width:150px">  
+<option>India</option>  
+<option>Estados Unidos</option>  
+<option>Reino Unido</option>  
+<option>Mexico</option>  
+<option>Otros</option>  
+</select>  
+</td></tr>  
+<tr><td colspan="2"><input type="submit" value="Guardar Empleado"/></td></tr>  
+</table>  
+</form>  
+<br/>  
+<a href="ViewServlet">Ver Empleados</a>  
+</body>
+
+</html>  
